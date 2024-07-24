@@ -35,9 +35,11 @@ The code is based off of a retrained resnet18 model that I trained on roughly 15
 5. Run the docker using docker/run.sh
 6. cd into python/training/classification
 7. Run the code
+        
         (a) To run the code and have the input be your webcam, type: imagenet --model=models/print_fail_detect/resnet18.onnx --labels=data/print_fail_detect/labels.txt --input-blob=input_0 --output-blob=output_0 /dev/video0
         
         (b) To run the code and have the input be your own video/image file, put that file within the jetson-inference folder on your Nano. Once that is completed, continue and run imagenet --model=models/print_fail_detect/resnet18.onnx --labels=data/print_fail_detect/labels.txt --input-blob=input_0 --output-blob=output_0 /[path-to-your-file]
+        
 There will be prints in the terminal that will classify the image supplied as either "fail" or "not_fail".
 
 [View a video explanation here](video link)
