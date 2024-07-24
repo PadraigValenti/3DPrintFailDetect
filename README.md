@@ -21,6 +21,8 @@ The code is based off of a retrained resnet18 model that I trained on roughly 15
    (b) To run the code and have the input be your own video/image file, put that file within the jetson-inference folder on your Nano. Once that is completed, continue and run: imagenet --model=/home/nvidia/jetson-inference/python/training/classification/models/print_fail_detect/resnet18.onnx --labels=/home/nvidia/jetson-inference/python/training/classification/models/print_fail_detect/labels.txt --input-blob=input_0 --output-blob=output_0 /[path-to-your-file]
 
    (c) If you want to be able to see what the webcam is seeing, add an output source to the end, after you define your input source. This is explained very well by the jetson-inference documentation, found here: https://github.com/dusty-nv/jetson-inference/blob/master/docs/aux-streaming.md
+   An example for this would be: imagenet --model=/home/nvidia/jetson-inference/python/training/classification/models/print_fail_detect/resnet18.onnx --labels=/home/nvidia/jetson-inference/python/training/classification/models/print_fail_detect/labels.txt --input-blob=input_0 --output-blob=output_0 /dev/video0 webrtc://@:1234/out
+   This would create a WebRTC stream viewable via your browser. To access it you would just type [Your_jetsons_IP]:1234 
         
 There will be prints in the terminal that will classify the image supplied as either "fail" or "not_fail", and on an output stream there will be a readout in the top left corner of the AI's confidence and if it believes the print has failed.
 
