@@ -24,3 +24,7 @@ The code is based off of a retrained resnet18 model that I trained on roughly 15
 5. There will be prints in the terminal that will classify the image supplied as either "fail" or "not_fail", and on an output stream there will be a readout in the top left corner of the AI's confidence and if it believes the print has failed.
 
 [View a video explanation here](https://www.youtube.com/watch?v=msI9ZKM9R8Q)
+
+## Dataset Used
+If you want to use my dataset, here it is!
+[Kaggle](https://www.kaggle.com/datasets/padraigvalenti/3d-printing-failure-detection)
