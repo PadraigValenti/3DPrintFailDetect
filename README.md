@@ -4,7 +4,7 @@ This is a local program desined to run on the NVIDIA Jetson Nano using the jetso
 
 ## The Algorithm
 
-The code is based off of a retrained resnet18 model that I trained on roughly 1500 images of both failed and successful prints. There are two classes, fail and not_fail. The Python script that you run uses an 'if' statement that when the class is fail and the model's confidence is over 60%, it prints a message into the terminal.
+The code is based off of a retrained resnet18 model that I trained on roughly 1500 images of both failed and successful prints. There are two classes, fail and not_fail
 
 ## Running this project
 
